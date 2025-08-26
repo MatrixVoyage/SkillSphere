@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Navbar from "./components/Navbar";
 import HeroSection from './components/HeroSection';
 import LiveActivityFeed from './components/LiveActivityFeed';
 import HowItWorksSection from './components/HowItWorksSection';
@@ -39,6 +40,8 @@ const Homepage = () => {
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-brand-canvas text-brand-text-primary"
     >
+      {/* Naigation bar */}
+      <Navbar />
       {/* Hero Section */}
       <HeroSection />
       {/* Live Activity Feed */}

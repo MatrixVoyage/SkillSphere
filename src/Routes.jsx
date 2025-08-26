@@ -9,6 +9,7 @@ import ProjectWorkspace from './pages/project-workspace';
 import KnowledgeHub from './pages/knowledge-hub';
 import ProfileShowcase from './pages/profile-showcase';
 import Homepage from './pages/homepage';
+import LoginPage from "./pages/login-page";
 
 const Routes = () => {
   return (
@@ -24,6 +25,7 @@ const Routes = () => {
         <Route path="/knowledge-hub" element={<KnowledgeHub />} />
         <Route path="/profile-showcase" element={<ProfileShowcase />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>
