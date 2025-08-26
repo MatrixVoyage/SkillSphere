@@ -10,6 +10,7 @@ import KnowledgeHub from './pages/knowledge-hub';
 import ProfileShowcase from './pages/profile-showcase';
 import Homepage from './pages/homepage';
 import LoginPage from "./pages/login-page";
+import SignUp from "./pages/login-page/components/signup";
 
 const Routes = () => {
   return (
@@ -18,7 +19,7 @@ const Routes = () => {
       <ScrollToTop />
       <RouterRoutes>
         {/* Define your route here */}
-        <Route path="/" element={<CommunityExplorer />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/community-explorer" element={<CommunityExplorer />} />
         <Route path="/skill-verification-center" element={<SkillVerificationCenter />} />
         <Route path="/project-workspace" element={<ProjectWorkspace />} />
@@ -26,6 +27,7 @@ const Routes = () => {
         <Route path="/profile-showcase" element={<ProfileShowcase />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>
